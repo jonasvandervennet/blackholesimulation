@@ -6,9 +6,6 @@ BlackHole blackhole;
 ArrayList<Photon> photons;
 int photon_dist = 20;
 
-void circle(float x, float y, float r){
-  ellipse(x, y, r, r);
-}
 
 void setup() {
   fullScreen();
@@ -20,7 +17,6 @@ void setup() {
   for (int i=0; i<height/2; i+=photon_dist) {
     photons.add(new Photon(width - 20, i));
   }
-  println(photon_dist);
 }
 
 void draw() {

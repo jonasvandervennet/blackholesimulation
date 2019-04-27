@@ -5,7 +5,6 @@ class BlackHole{
    this.pos = new PVector(x, y);
    mass = m;
    rs = 2 * G * mass / (c * c);
-   println("Rs:: " + rs);
  }
  BlackHole(int x, int y, float m, int r){
    this(x, y, m);
